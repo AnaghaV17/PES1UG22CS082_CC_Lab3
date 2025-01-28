@@ -16,7 +16,7 @@ class Product:
 def list_products() -> list[Product]:
     products = dao.list_products()
     result = []
-    result += list(map(Product.load, products))
+    result += list(map(Product.load, products)) ## My optimisation
     #for product in products:
         #result.append(Product.load(product)) 
     
