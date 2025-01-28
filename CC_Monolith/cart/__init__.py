@@ -25,7 +25,7 @@ def get_cart(username: str) -> list:
     for cart_detail in cart_details:
         contents = cart_detail['contents']
         evaluated_contents = eval(contents)  
-        items+=evaluated_contents
+        items+=evaluated_contents  ## My optimisation
         #for content in evaluated_contents:
             #items.append(content)
 
