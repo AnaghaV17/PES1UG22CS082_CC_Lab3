@@ -97,7 +97,7 @@ def list_products():
     products = []
     rows = cursor.fetchall()
     
-    products+=rows
+    products+=rows ## My optimisation
     #for i in range(len(rows)):
         #temp = rows[i]
         #products.append(temp)
